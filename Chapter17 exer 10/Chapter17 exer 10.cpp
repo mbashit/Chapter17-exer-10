@@ -16,7 +16,7 @@ int main()
 	cout << "enter the three numbers: " << endl;
 	cin >> x >> y >> z;
 
-	if (!(x = y + z) || !(y = x + z) || !(z = x + y)) {
+	if ((x != y + z) || (y != x + z) || (z != x + y)) {
 		cout << "given numbers cannot be sides of a triangle";
 	}
 	else {
